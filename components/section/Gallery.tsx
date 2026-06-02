@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { Download, Eye, Clock, TrendingUp, ChevronDown } from "lucide-react";
 import { templates, type MotionTemplate } from "@/data/data";
-import Image
 
 const Gallery = () => {
   const [activeCategory, setActiveCategory] = useState("Semua");
@@ -120,7 +119,7 @@ const Gallery = () => {
         />
 
         {template.poster && (
-          <Image
+          <img
             src={template.poster}
             alt={template.title}
             className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${hoveredCard === template.id ? "opacity-0 pointer-events-none" : "opacity-100"}`}
