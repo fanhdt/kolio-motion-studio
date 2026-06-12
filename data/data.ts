@@ -54,10 +54,10 @@ export const templates: MotionTemplate[] = [
   // Sisanya dari id 4 - 31 menggunakan poster "coming-soon.png"
   {
     id: "4",
-    title: "Instagram Story Pack",
-    slug: "instagram-story-pack",
+    title: "Doodle Modern",
+    slug: "doodle-modern",
     category: "Social Media",
-    videoSrc: "/videos/instagram-story-pack.mp4",
+    videoSrc: "/videos/doodlemodern.mp4",
     poster: "/posters/coming-soon.png",
     duration: "0:30",
     views: 3456,
@@ -66,10 +66,10 @@ export const templates: MotionTemplate[] = [
   },
   {
     id: "5",
-    title: "TikTok Transition",
-    slug: "tiktok-transition",
+    title: "Doodle Simple",
+    slug: "doodle-simple",
     category: "Social Media",
-    videoSrc: "/videos/tiktok-transition.mp4",
+    videoSrc: "/videos/1.mp4",
     poster: "/posters/coming-soon.png",
     duration: "0:08",
     views: 5678,
