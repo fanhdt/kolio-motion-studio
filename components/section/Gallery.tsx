@@ -156,7 +156,7 @@ const Gallery = () => {
 
       <div className="p-4">
         <h3 className="font-semibold text-gray-900 text-sm sm:text-base mb-1 line-clamp-1">{template.title}</h3>
-        <p className="text-xs text-purple-600 mb-2">{template.category}</p>
+        <p className="text-xs text-orange-600 mb-2">{template.category}</p>
 
         <div className="flex items-center justify-between text-xs text-gray-500">
           <div className="flex items-center gap-3">
@@ -164,12 +164,12 @@ const Gallery = () => {
               <Eye size={12} />
               {template.views.toLocaleString()}
             </span>
-            <button onClick={(e) => handleDownload(e, template.videoSrc, template.title)} className="flex items-center gap-1 hover:text-purple-600 transition p-1 rounded" title="Unduh Video">
+            <button onClick={(e) => handleDownload(e, template.videoSrc, template.title)} className="flex items-center gap-1 hover:text-orange-600 transition p-1 rounded" title="Unduh Video">
               <Download size={12} />
               {template.downloads.toLocaleString()}
             </button>
           </div>
-          <span className="text-purple-600 group-hover:text-purple-700 transition font-medium">Detail →</span>
+          <span className="text-orange-600 group-hover:text-orange-700 transition font-medium">Detail →</span>
         </div>
       </div>
     </Link>

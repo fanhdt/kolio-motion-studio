@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import Link from "next/link";
 import { useAuth } from "@clerk/nextjs"; // 1. Import Auth Hook dari Clerk
-import { ArrowLeft, Download, Eye, Clock, CheckCircle2, Share2, Film, Lock } from "lucide-react";
+import { ArrowLeft, Download, Eye, Clock, CheckCircle2, Share2, Film, Lock, Pencil } from "lucide-react";
 import { templates } from "@/data/data";
 
 export default function TemplateDetailPage() {
@@ -136,6 +136,12 @@ export default function TemplateDetailPage() {
 
               {/* Tombol Aksi Download Dinamis Terkunci */}
               <div className="space-y-3 pt-2">
+                {/* TOMBOL EDIT & CUSTOMIZE */}
+                <Link href={`/editor/${template.slug}`} className="w-full border border-purple-200 hover:bg-purple-50 text-purple-700 py-3 px-4 rounded-xl font-semibold transition flex items-center justify-center gap-2 text-sm shadow-sm">
+                  <Pencil size={16} />
+                  Edit & Customize
+                </Link>
+
                 {isSignedIn ? (
                   <button
                     onClick={handleDownload}
